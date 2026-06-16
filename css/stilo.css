@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.page {
+    width: 80%;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: rgb(174, 246, 246);
+    border: solid;
+    border-radius: 2em;
+}
+.boton {
+    margin: 1em 0.3em;
+    padding: 0 1.5em;
+    background-color: green;
+    color: #fff;
+    height: 3em;
+    border-radius: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+a:hover {
+    opacity: 0.8;
+    /*background-color: green;*/
+    color: black;
+    
+}
+a:active {
+    transform: scale(.95);
+}

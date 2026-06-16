@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #CD5C5C;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    width: 187px;
+    list-style: none;
+}
+
+.boton {
+    display: block;
+    float: left;
+    width: 187px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #8d3d6e;
+    border-radius: 12px;
+    margin: 8px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+/*
+.boton {
+    background-image: url('../img/sinActivar.png');
+}
+*/
+
+.boton:hover {
+    background-color: #aa7ed4;
+    color: black;
+}
+
+/*
+.boton:hover {
+    background-image: url('../img/activado.png');
+}
+*/

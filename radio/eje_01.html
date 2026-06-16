@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background:white;
+            margin:50px;
+        }
+        div{
+            margin-bottom: 10px;
+        }
+        #recuadro1{
+            background-color:#ddd;
+            width:200px;
+            padding:10px;
+            border-radius: 20px;
+            box-shadow: -10px -5px 5px rgb(40, 147, 173);
+        }
+        #recuadro2{
+            background-color:#ddd;
+            width:200px;
+            padding:10px;
+            border-radius: 20px 40px 50px 30px;
+            box-shadow: 10px 4px rgba(8, 190, 63, 0.3);
+        }
+        #recuadro3{
+            background-color:#ddd;
+            width:200px;
+            padding:10px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 30px;
+            box-shadow: 10px 6px 5px rgba(120,100,10,0.8) inset;
+        }
+        #recuadro4{
+            background-color:#ddd;
+            width:200px;
+            padding:10px;
+            border-radius: 20px;
+            box-shadow: 0 0 40px #d44141 inset;
+        }
+        .titulo {
+            color: #725608;
+            text-shadow: 5px -5px 5px #b64f4f;
+        }
+        .titulo2 {
+            color: cornflowerblue;
+            text-shadow: 
+            3px 3px 5px #f00, 
+            6px 6px 5px #0f0,
+            9px 9px 5px #00f;
+        }
+        .titulo:hover {
+            color: #0f0;
+            font-size: 2em; /* 1em=16px, 2em=32px, etc */ 
+            text-shadow: 10px 8px 10px rgba(120,100,10,0.8);
+        }
+        #recuadro2:hover {
+            opacity: 0.5; /*0 a 1*/
+        }
+    </style> 
+</head>
+<body>
+    <div id="recuadro1">
+        <h3 class="titulo">Recuadro 1</h3>
+        <p>Podemos indicar un único valor que se asignará a los cuatro vértices</p>
+    </div>
+    <div id="recuadro2">
+        <h3 class="titulo2">Recuadro 2</h3>
+        <p>Podemos indicar un único valor que se asignará a los cuatro vértices</p>
+    </div>
+    <div id="recuadro3">
+        <h3>Recuadro 3</h3>
+        <p>Podemos indicar un único valor que se asignará a los cuatro vértices</p>
+    </div>
+    <div id="recuadro4">
+        <h3>Recuadro 4</h3>
+        <p>Podemos indicar un único valor que se asignará a los cuatro vértices</p>
+    </div>
+</body>
+</html>
