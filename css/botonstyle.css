@@ -61,12 +61,15 @@ nav ul li ul{
     top:105%;
     left:0;
     width:100%;
-    display:none;
+    opacity:0;
+    visibility:hidden;
+    transition:0.3s;
     z-index:100;
 }
 
-.dropdown.active > ul{
-    display:block;
+.dropdown:hover > ul{
+    opacity:1;
+    visibility:visible;
 }
 
 nav ul li ul li a{
