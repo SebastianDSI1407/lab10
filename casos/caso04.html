@@ -9,9 +9,7 @@
 <body>
     <nav>
         <ul>
-            <li>
-                <a href="#">INICIO</a>
-            </li>
+            <li><a href="#">INICIO</a></li>
 
             <li class="dropdown">
                 <a href="#">NOSOTROS</a>
@@ -45,32 +43,6 @@
             </li>
         </ul>
     </nav>
-
-    <!--este codigo es javascript el problema es que al abrir uno de los menus se queda abierto pese a que le de click a otro
-    en todo caso preguntar al profe porque en la guia no tiene indicaciones mas que la imagen y la verdad es que no tengo ni idea de 
-    que hacer en ese punto XD  -->
-    <script>
-        const dropdowns = document.querySelectorAll(".dropdown");
-        dropdowns.forEach(drop => {
-            const boton = drop.querySelector(":scope > a");
-            boton.addEventListener("click", function(e){
-                e.preventDefault();
-                dropdowns.forEach(otro => {
-                    if(otro !== drop){
-                        otro.classList.remove("active");
-                    }
-                });
-                drop.classList.toggle("active");
-            });
-        });
-        document.addEventListener("click", function(e){
-            if(!e.target.closest(".dropdown")){
-                dropdowns.forEach(drop => {
-                    drop.classList.remove("active");
-                });
-            }
-        });
-    </script>
 
 </body>
 </html>
